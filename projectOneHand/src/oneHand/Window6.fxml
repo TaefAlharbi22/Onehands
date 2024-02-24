@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="1122.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oneHand.Window6Controller">
+   <children>
+      <BorderPane layoutX="7.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="901.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@image.png" />
+               </image>
+            </ImageView>
+         </bottom>
+         <top>
+            <Label text="ONE HAND" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="40.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+      </BorderPane>
+      <ChoiceBox fx:id="listID" layoutX="450.0" layoutY="349.0" prefHeight="39.0" prefWidth="420.0" />
+      <Button layoutX="246.0" layoutY="824.0" mnemonicParsing="false" onAction="#signOutAction" prefHeight="39.0" prefWidth="150.0" text="Sign out" />
+      <Button layoutX="246.0" layoutY="776.0" mnemonicParsing="false" onAction="#backAction" prefHeight="39.0" prefWidth="150.0" text="Back" />
+      <Label layoutX="484.0" layoutY="279.0" prefHeight="35.0" prefWidth="362.0" text="            Your lost property">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
